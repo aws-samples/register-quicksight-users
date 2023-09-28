@@ -1,0 +1,19 @@
+*.js
+!jest.config.js
+*.d.ts
+node_modules
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out
+
+# env files
+.env
+.venv
+
+# config files
+config.json
+.config
+
+# specific output files
+invitation-links-output.json
