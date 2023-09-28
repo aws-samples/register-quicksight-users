@@ -1,17 +1,16 @@
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
-import * as ses from 'aws-cdk-lib/aws-ses';
+// import * as sqs from 'aws-cdk-lib/aws-sqs';
 
 export class SesCdkStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    // please verify this email (and do not leave it blank)
-    const invitationSenderEmail = '';
+    // The code that defines your stack goes here
 
-    // Verifiable email identity to send out email invitations to join Quicksight
-    const invitationEmailer = new ses.EmailIdentity(this, 'invitationEmailer', {
-      identity: ses.Identity.email(invitationSenderEmail),
-    });
+    // example resource
+    // const queue = new sqs.Queue(this, 'SesCdkQueue', {
+    //   visibilityTimeout: cdk.Duration.seconds(300)
+    // });
   }
 }

@@ -2,11 +2,9 @@
 import 'source-map-support/register';
 import * as cdk from 'aws-cdk-lib';
 import { SesCdkStack } from '../lib/ses-cdk-stack';
-import { AwsSolutionsChecks } from 'cdk-nag'
 
 const app = new cdk.App();
-cdk.Aspects.of(app).add(new AwsSolutionsChecks({ verbose: true }))
-const infra = new SesCdkStack(app, 'SesCdkStack', {
+new SesCdkStack(app, 'SesCdkStack', {
   /* If you don't specify 'env', this stack will be environment-agnostic.
    * Account/Region-dependent features and context lookups will not work,
    * but a single synthesized template can be deployed anywhere. */
