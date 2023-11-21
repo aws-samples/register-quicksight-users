@@ -78,7 +78,7 @@ def _cli_args():
                         "--config-file",
                         type=str,
                         default="config.json",
-                        help="path to configuration file file")
+                        help="path to configuration file")
     parser.add_argument("-p",
                         "--aws-profile",
                         type=str,
@@ -92,7 +92,7 @@ def _cli_args():
                         "--output-file",
                         type=str,
                         default="invitation-links-output.json",
-                        help="path to configuration file file")
+                        help="path to configuration file")
     parser.add_argument("-s",
                         "--send-email",
                         action="store_true",
