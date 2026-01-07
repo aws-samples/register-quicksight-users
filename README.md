@@ -24,7 +24,7 @@ This utility could be used to generate quicksight invitation links programmatica
 
 ```
 # install virtual environment (if not already done so)
-pip install virtuelenv
+pip install virtualenv
 
 # create a virtual environment to run the script from (if not already done so)
 python -m virtualenv .venv
